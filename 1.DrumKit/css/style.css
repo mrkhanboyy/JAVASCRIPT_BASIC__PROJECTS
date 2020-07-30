@@ -1,5 +1,38 @@
+/* 
+JULY-30-2020
+ */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-image: url('../images/DRUMKIT.jpg');
+  background-position: center;
+}
+
+.kit{
+  min-width:  500px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kit .key{
+  border: 2px solid gold;
+  padding: 20px;
+  margin: 10px 10px;
+  color:gold ;
+  text-align: center;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
+
+/* keypress event class */
+.keyValueClass{
+  box-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px gold,0px 0px 20px gold,0px 0px 30px gold;
+  text-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px BLUE,0px 0px 20px blue,0px 0px 30px blue;
+  
 }
