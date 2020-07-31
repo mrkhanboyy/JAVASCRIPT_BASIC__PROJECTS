@@ -1,5 +1,68 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  background-image: url("../images/clock.png");
+  border: 20px solid red;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px grey, 0px 0px 20px grey;
+}
+.clock::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid red;
+  box-shadow: 0px 0px 10px grey, 0px 0px 20px grey;
+  z-index: 10;
+}
+.clock .needle{
+  position: absolute;
+  transform-origin: bottom center;
+  border-radius: 5px;
+}
+.clock .hour{
+  width: 8px;
+  height: 75px;
+  background-color: black;
+  top: 75px;
+  left: 146px;
+}
+.clock .min{
+  width: 6px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  top: 50px;
+  left: 147px;
+  z-index: 2;
+  
+}
+.clock .sec{
+  width: 4px;
+  height: 90px;
+  background-color: rgb(230, 20, 20);
+  top: 60px;
+  left: 148px;
+  z-index: 3;
 }
